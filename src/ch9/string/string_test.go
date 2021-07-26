@@ -15,5 +15,8 @@ func TestString(t *testing.T) {
 	for i, ch := range s {
 		t.Logf("i:(%v), ch:(%[2]v), type(ch):(%[2]T), unicode(ch):(%[2]x)", i, ch)
 	}
+}
 
+func TestByte2String(t *testing.T) {
+	t.Log(string([]byte{228, 184, 138, 230, 181, 183}))
 }
